@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57b270f9-2fb9-4a63-84e6-fe1eead6ec0f" name="Changes" comment="board">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess/pieces/Bispo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess/pieces/Cavalo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess/pieces/Peao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess/pieces/Rainha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess/pieces/Rei.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess/pieces/Torre.java" afterDir="false" />
+    <list default="true" id="57b270f9-2fb9-4a63-84e6-fe1eead6ec0f" name="Changes" comment="initial position">
+      <change afterPath="$PROJECT_DIR$/src/boardgame/BoardException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/boardgame/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/boardgame/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessMatch.java" afterDir="false" />
@@ -47,6 +41,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -97,12 +92,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690061839076</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial position">
+      <option name="closed" value="true" />
+      <created>1690063648832</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690063648832</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="board" />
-    <option name="LAST_COMMIT_MESSAGE" value="board" />
+    <MESSAGE value="initial position" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial position" />
   </component>
 </project>
