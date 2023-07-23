@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57b270f9-2fb9-4a63-84e6-fe1eead6ec0f" name="Changes" comment="BoardException e defensive programming">
-      <change afterPath="$PROJECT_DIR$/src/chess/ChessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess/ChessPosition.java" afterDir="false" />
+    <list default="true" id="57b270f9-2fb9-4a63-84e6-fe1eead6ec0f" name="Changes" comment="placeNewPiece">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690078970612</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="placeNewPiece">
+      <option name="closed" value="true" />
+      <created>1690080996265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690080996265</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -116,6 +122,7 @@
     <MESSAGE value="board" />
     <MESSAGE value="initial position" />
     <MESSAGE value="BoardException e defensive programming" />
-    <option name="LAST_COMMIT_MESSAGE" value="BoardException e defensive programming" />
+    <MESSAGE value="placeNewPiece" />
+    <option name="LAST_COMMIT_MESSAGE" value="placeNewPiece" />
   </component>
 </project>
