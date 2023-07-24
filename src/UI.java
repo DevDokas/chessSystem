@@ -26,6 +26,18 @@ public class UI {
     public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
     public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 
+    public static void clearScreen() {
+        try{
+
+            new ProcessBuilder("cmd","/c","cls").inheritIO().start().waitFor();
+
+        } catch(Exception  e) {
+
+            System.out.println(e);
+
+        }
+    }
+
     public static ChessPosition readChessPosition(Scanner sc) {
         try {
             String s = sc.nextLine();
