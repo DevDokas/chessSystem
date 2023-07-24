@@ -5,16 +5,22 @@ import boardgame.Piece;
 import boardgame.Position;
 import chess.pieces.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ChessMatch {
 
     private int turn;
     private Color currentPlayer;
     private Board board;
 
+    private List<Piece> piecesOnTheBoard = new ArrayList<>();
+    private List<Piece> capturedPieces = new ArrayList<>();
+
     public ChessMatch() {
         board = new Board(8,8);
         turn = 1;
-        currentPlayer = Color.WHITE;
+        currentPlayer = Color.BRANCO;
         initialSetup();
     }
 
@@ -57,6 +63,12 @@ public class ChessMatch {
         Piece p = board.removePiece(source);
         Piece capturedPiece = board.removePiece(target);
         board.placePiece(p, target);
+
+        if (capturedPiece != null) {
+            piecesOnTheBoard.remove(capturedPiece);
+            capturedPieces.add(capturedPiece);
+        }
+
         return capturedPiece;
     }
 
@@ -80,11 +92,12 @@ public class ChessMatch {
 
     private void nextTurn() {
         turn++;
-        currentPlayer = (currentPlayer == Color.WHITE) ? Color.BLACK :  Color.WHITE;
+        currentPlayer = (currentPlayer == Color.BRANCO) ? Color.PRETO :  Color.BRANCO;
     }
 
     private void placeNewPiece(char column, int row, ChessPiece piece) {
         board.placePiece(piece, new ChessPosition(column, row).toPosition());
+        piecesOnTheBoard.add(piece);
     }
 
     private void initialSetup() {
@@ -92,51 +105,51 @@ public class ChessMatch {
         // White Pieces
 
             // Torre
-        placeNewPiece('a', 8, new Torre(board, Color.WHITE));
-        placeNewPiece('h', 8, new Torre(board, Color.WHITE));
+        placeNewPiece('a', 8, new Torre(board, Color.BRANCO));
+        placeNewPiece('h', 8, new Torre(board, Color.BRANCO));
             // Cavalo
-        placeNewPiece('b', 8, new Cavalo(board, Color.WHITE));
-        placeNewPiece('g', 8, new Cavalo(board, Color.WHITE));
+        placeNewPiece('b', 8, new Cavalo(board, Color.BRANCO));
+        placeNewPiece('g', 8, new Cavalo(board, Color.BRANCO));
             // Bispo
-        placeNewPiece('c', 8, new Bispo(board, Color.WHITE));
-        placeNewPiece('f', 8, new Bispo(board, Color.WHITE));
+        placeNewPiece('c', 8, new Bispo(board, Color.BRANCO));
+        placeNewPiece('f', 8, new Bispo(board, Color.BRANCO));
             // Rei
-        placeNewPiece('e', 8, new Rei(board, Color.WHITE));
+        placeNewPiece('e', 8, new Rei(board, Color.BRANCO));
             // Rainha
-        placeNewPiece('d', 8, new Rainha(board, Color.WHITE));
+        placeNewPiece('d', 8, new Rainha(board, Color.BRANCO));
             // Peão
-        placeNewPiece('a', 7, new Peao(board, Color.WHITE));
-        placeNewPiece('b', 7, new Peao(board, Color.WHITE));
-        placeNewPiece('c', 7, new Peao(board, Color.WHITE));
-        placeNewPiece('d', 7, new Peao(board, Color.WHITE));
-        placeNewPiece('e', 7, new Peao(board, Color.WHITE));
-        placeNewPiece('f', 7, new Peao(board, Color.WHITE));
-        placeNewPiece('g', 7, new Peao(board, Color.WHITE));
-        placeNewPiece('h', 7, new Peao(board, Color.WHITE));
+        placeNewPiece('a', 7, new Peao(board, Color.BRANCO));
+        placeNewPiece('b', 7, new Peao(board, Color.BRANCO));
+        placeNewPiece('c', 7, new Peao(board, Color.BRANCO));
+        placeNewPiece('d', 7, new Peao(board, Color.BRANCO));
+        placeNewPiece('e', 7, new Peao(board, Color.BRANCO));
+        placeNewPiece('f', 7, new Peao(board, Color.BRANCO));
+        placeNewPiece('g', 7, new Peao(board, Color.BRANCO));
+        placeNewPiece('h', 7, new Peao(board, Color.BRANCO));
 
         // Black Pieces
 
             // Torre
-        placeNewPiece('a', 1, new Torre(board, Color.BLACK));
-        placeNewPiece('h', 1, new Torre(board, Color.BLACK));
+        placeNewPiece('a', 1, new Torre(board, Color.PRETO));
+        placeNewPiece('h', 1, new Torre(board, Color.PRETO));
             // Cavalo
-        placeNewPiece('b', 1, new Cavalo(board, Color.BLACK));
-        placeNewPiece('g', 1, new Cavalo(board, Color.BLACK));
+        placeNewPiece('b', 1, new Cavalo(board, Color.PRETO));
+        placeNewPiece('g', 1, new Cavalo(board, Color.PRETO));
             // Bispo
-        placeNewPiece('c', 1, new Bispo(board, Color.BLACK));
-        placeNewPiece('f', 1, new Bispo(board, Color.BLACK));
+        placeNewPiece('c', 1, new Bispo(board, Color.PRETO));
+        placeNewPiece('f', 1, new Bispo(board, Color.PRETO));
             // Rei
-        placeNewPiece('d', 1, new Rei(board, Color.BLACK));
+        placeNewPiece('d', 1, new Rei(board, Color.PRETO));
             // Rainha
-        placeNewPiece('e', 1, new Rainha(board, Color.BLACK));
+        placeNewPiece('e', 1, new Rainha(board, Color.PRETO));
             // Peão
-        placeNewPiece('a', 2, new Peao(board, Color.BLACK));
-        placeNewPiece('b', 2, new Peao(board, Color.BLACK));
-        placeNewPiece('c', 2, new Peao(board, Color.BLACK));
-        placeNewPiece('d', 2, new Peao(board, Color.BLACK));
-        placeNewPiece('e', 2, new Peao(board, Color.BLACK));
-        placeNewPiece('f', 2, new Peao(board, Color.BLACK));
-        placeNewPiece('g', 2, new Peao(board, Color.BLACK));
-        placeNewPiece('h', 2, new Peao(board, Color.BLACK));
+        placeNewPiece('a', 2, new Peao(board, Color.PRETO));
+        placeNewPiece('b', 2, new Peao(board, Color.PRETO));
+        placeNewPiece('c', 2, new Peao(board, Color.PRETO));
+        placeNewPiece('d', 2, new Peao(board, Color.PRETO));
+        placeNewPiece('e', 2, new Peao(board, Color.PRETO));
+        placeNewPiece('f', 2, new Peao(board, Color.PRETO));
+        placeNewPiece('g', 2, new Peao(board, Color.PRETO));
+        placeNewPiece('h', 2, new Peao(board, Color.PRETO));
     }
 }
