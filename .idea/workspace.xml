@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57b270f9-2fb9-4a63-84e6-fe1eead6ec0f" name="Changes" comment="cleaning the terminal">
+    <list default="true" id="57b270f9-2fb9-4a63-84e6-fe1eead6ec0f" name="Changes" comment="validating the move of the pieces.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boardgame/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/boardgame/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/boardgame/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/boardgame/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess/ChessPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessPiece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess/pieces/Bispo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/pieces/Bispo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess/pieces/Cavalo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/pieces/Cavalo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess/pieces/Peao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/pieces/Peao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess/pieces/Rainha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/pieces/Rainha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess/pieces/Rei.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/pieces/Rei.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess/pieces/Torre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/pieces/Torre.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,18 +35,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/code/ws-java/chessSystem",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/code/ws-java/chessSystem&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -139,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690206003072</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="validating the move of the pieces.">
+      <option name="closed" value="true" />
+      <created>1690207489721</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690207489721</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,6 +152,7 @@
     <MESSAGE value="placeNewPiece" />
     <MESSAGE value="coloring" />
     <MESSAGE value="cleaning the terminal" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaning the terminal" />
+    <MESSAGE value="validating the move of the pieces." />
+    <option name="LAST_COMMIT_MESSAGE" value="validating the move of the pieces." />
   </component>
 </project>
