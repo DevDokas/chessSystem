@@ -47,10 +47,10 @@ public class Rei extends ChessPiece {
             mat[p.getRow()][p.getColumn()] = true;
         }
         // Diagonal - Cima/Esquerda
-        //p.setValues(position.getRow() -1, position.getColumn() -1);
-        //if (getBoard().positionExists(p) && canMove(p)) {
-        //    mat[p.getRow()][p.getColumn()] = true;
-        //}
+        p.setValues(position.getRow() -1, position.getColumn() -1);
+        if (getBoard().positionExists(p) && canMove(p)) {
+            mat[p.getRow()][p.getColumn()] = true;
+        }
         // Diagonal - Cima/Direita
         p.setValues(position.getRow() -1, position.getColumn() +1);
         if (getBoard().positionExists(p) && canMove(p)) {
