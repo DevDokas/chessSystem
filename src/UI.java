@@ -37,7 +37,7 @@ public class UI {
 
         } catch(Exception  e) {
 
-            System.out.println(e);
+            throw new RuntimeException(e);
 
         }
     }
@@ -96,7 +96,7 @@ public class UI {
         }
         System.out.println("  a b c d e f g h");
 
-    };
+    }
 
     private static void printPiece(ChessPiece piece, boolean background) {
         if (background) {
