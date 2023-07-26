@@ -93,6 +93,24 @@ public class ChessMatch {
             capturedPieces.add(capturedPiece);
         }
 
+        // Roque pequeno
+        if (p instanceof Rei && target.getColumn() == source.getColumn() +2) {
+            Position sourceT = new Position(source.getRow(), source.getColumn() +3);
+            Position targetT = new Position(source.getRow(), source.getColumn() +1);
+            ChessPiece torre = (ChessPiece) board.removePiece(sourceT);
+            board.placePiece(torre, targetT);
+            torre.increaseMoveCount();
+        }
+
+        // Roque grande
+        if (p instanceof Rei && target.getColumn() == source.getColumn() -2) {
+            Position sourceT = new Position(source.getRow(), source.getColumn() -4);
+            Position targetT = new Position(source.getRow(), source.getColumn() -1);
+            ChessPiece torre = (ChessPiece) board.removePiece(sourceT);
+            board.placePiece(torre, targetT);
+            torre.increaseMoveCount();
+        }
+
         return capturedPiece;
     }
 
@@ -105,6 +123,24 @@ public class ChessMatch {
             board.placePiece(capturedPiece, target);
             capturedPieces.remove(capturedPiece);
             piecesOnTheBoard.add(capturedPiece);
+        }
+
+        // Roque pequeno
+        if (p instanceof Rei && target.getColumn() == source.getColumn() +2) {
+            Position sourceT = new Position(source.getRow(), source.getColumn() +3);
+            Position targetT = new Position(source.getRow(), source.getColumn() +1);
+            ChessPiece torre = (ChessPiece) board.removePiece(targetT);
+            board.placePiece(torre, sourceT);
+            torre.decreaseMoveCount();
+        }
+
+        // Roque grande
+        if (p instanceof Rei && target.getColumn() == source.getColumn() -2) {
+            Position sourceT = new Position(source.getRow(), source.getColumn() -4);
+            Position targetT = new Position(source.getRow(), source.getColumn() -1);
+            ChessPiece torre = (ChessPiece) board.removePiece(targetT);
+            board.placePiece(torre, sourceT);
+            torre.decreaseMoveCount();
         }
     }
 
@@ -204,9 +240,9 @@ public class ChessMatch {
         placeNewPiece('c', 1, new Bispo(board, Color.BRANCO));
         placeNewPiece('f', 1, new Bispo(board, Color.BRANCO));
             // Rei
-        placeNewPiece('d', 1, new Rei(board, Color.BRANCO));
+        placeNewPiece('e', 1, new Rei(board, Color.BRANCO, this));
             // Rainha
-        placeNewPiece('e', 1, new Rainha(board, Color.BRANCO));
+        placeNewPiece('d', 1, new Rainha(board, Color.BRANCO));
             // Peão
         placeNewPiece('a', 2, new Peao(board, Color.BRANCO));
         placeNewPiece('b', 2, new Peao(board, Color.BRANCO));
@@ -229,7 +265,7 @@ public class ChessMatch {
         placeNewPiece('c', 8, new Bispo(board, Color.PRETO));
         placeNewPiece('f', 8, new Bispo(board, Color.PRETO));
         // Rei
-        placeNewPiece('e', 8, new Rei(board, Color.PRETO));
+        placeNewPiece('e', 8, new Rei(board, Color.PRETO, this));
         // Rainha
         placeNewPiece('d', 8, new Rainha(board, Color.PRETO));
         // Peão
