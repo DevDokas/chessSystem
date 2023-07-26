@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57b270f9-2fb9-4a63-84e6-fe1eead6ec0f" name="Changes" comment="implementing check mate logic">
+    <list default="true" id="57b270f9-2fb9-4a63-84e6-fe1eead6ec0f" name="Changes" comment="implementing castling">
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess/ChessPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessPiece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +180,55 @@
       <option name="project" value="LOCAL" />
       <updated>1690296087368</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="implementing move count">
+      <option name="closed" value="true" />
+      <created>1690301560779</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690301560779</updated>
+    </task>
+    <task id="LOCAL-00016" summary="implementing pawn moves">
+      <option name="closed" value="true" />
+      <created>1690302915848</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690302915848</updated>
+    </task>
+    <task id="LOCAL-00017" summary="implementing bishop moves">
+      <option name="closed" value="true" />
+      <created>1690303987542</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1690303987542</updated>
+    </task>
+    <task id="LOCAL-00018" summary="implementing knight and king moves">
+      <option name="closed" value="true" />
+      <created>1690305164708</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690305164708</updated>
+    </task>
+    <task id="LOCAL-00019" summary="implementing queen moves and fixing bishop move">
+      <option name="closed" value="true" />
+      <created>1690389365681</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690389365681</updated>
+    </task>
+    <task id="LOCAL-00020" summary="implementing castling">
+      <option name="closed" value="true" />
+      <created>1690391418612</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1690391418612</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,6 +245,12 @@
     <MESSAGE value="implementing turns." />
     <MESSAGE value="captured pieces list" />
     <MESSAGE value="implementing check mate logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing check mate logic" />
+    <MESSAGE value="implementing move count" />
+    <MESSAGE value="implementing pawn moves" />
+    <MESSAGE value="implementing bishop moves" />
+    <MESSAGE value="implementing knight and king moves" />
+    <MESSAGE value="implementing queen moves and fixing bishop move" />
+    <MESSAGE value="implementing castling" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing castling" />
   </component>
 </project>
